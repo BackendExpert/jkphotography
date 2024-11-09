@@ -8,8 +8,7 @@ const NavBar = () => {
         { id: 1, name: 'Home', link: '/' },
         { id: 2, name: 'About Us', link: 'AboutAs' },
         { id: 3, name: 'Album', link: 'Album' },
-        { id: 5, name: 'Careers', link: 'Careers' },
-        { id: 6, name: 'Contact Us', link: 'ContactUs' },
+        { id: 4, name: 'Contact Us', link: 'ContactUs' },
     ];
 
     const toggleMobileMenu = () => {
@@ -42,13 +41,13 @@ const NavBar = () => {
 
             {/* Mobile Menu */}
             <div
-                className={`absolute top-0 left-0 w-full bg-white shadow-md transition-transform duration-300 ease-in-out transform ${
-                    isMobileMenuOpen ? 'translate-y-14' : '-translate-y-full'
+                className={`absolute top-0 left-0 w-full h-screen  mt-24 backdrop-blur-lg bg-white/30 shadow-md transition-transform duration-300 ease-in-out transform ${
+                    isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
                 } md:hidden`}
             >
                 <div className="py-4">
                     {navData.map((data) => (
-                        <a href={data.link} key={data.id} className="block py-2 px-4 border-b border-gray-200">
+                        <a href={data.link} key={data.id} className="block py-2 px-4 ">
                             {data.name}
                         </a>
                     ))}
