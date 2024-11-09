@@ -6,7 +6,7 @@ const NavBar = () => {
 
     const navData = [
         { id: 1, name: 'Home', link: '/' },
-        { id: 2, name: 'About Us', link: 'AboutAs' },
+        { id: 2, name: 'About Us', link: '/AboutUs' },
         { id: 3, name: 'Album', link: 'Album' },
         { id: 4, name: 'Contact Us', link: 'ContactUs' },
     ];
@@ -15,7 +15,7 @@ const NavBar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const HomePageNavBar = location.pathname.startsWith("/");
+    const HomePageNavBar = location.pathname === '/';
 
     return (
         <div className={`h-auto py-8 px-6 ${HomePageNavBar ? 'bg-transparent text-white' : 'bg-white shadow-md text-gray-900'} `}>
