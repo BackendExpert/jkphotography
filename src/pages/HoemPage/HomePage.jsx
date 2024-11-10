@@ -5,7 +5,7 @@ const HomePage = () => {
 
   return (
     <div className="relative bg-cover bg-center min-h-screen p-8" style={{ backgroundImage: `url(${HomeImg})` }}>
-      <div className="absolute inset-0 bg-black opacity-80"></div> 
+      <div className="absolute inset-0 bg-black opacity-70"></div> 
       <div className="relative z-10 text-white my-8"> 
         <div className="text-center md:pt-[15%] pt-[30%]">
           <h1 className="logo-font font-semibold text-3xl tracking-[1rem]">JehanKandy</h1>
