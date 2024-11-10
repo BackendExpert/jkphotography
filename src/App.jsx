@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import AboutUs from "./pages/AboutUs";
 import Footer from "./components/NavBar/Footer";
+import TermsPrivacyPolicy from "./pages/TermsPrivacyPolicy";
 
 
 export default function App() {
@@ -40,6 +41,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<HomePage /> } />
         <Route path="/AboutUs" element={<AboutUs /> } />
+        <Route path="/TermsPrivacyPolicy" element={<TermsPrivacyPolicy /> } />
       </Routes>
 
       {
