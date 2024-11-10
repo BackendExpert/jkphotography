@@ -32,8 +32,8 @@ const Footer = () => {
                   </div>
               </div>
 
-              <div className="md:mx-32 mx-6 mt-24">
-                <div className="flex justify-between">
+              <div className="md:mx-32 mx-2 mt-24">
+                <div className="md:flex justify-between">
                   <p className="">
                     &copy; {currentYear} | JehanKandyPhotography | Developed and Maintained by <a href="https://www.linkedin.com/in/jehanweerasuriya/" target='_blank' className='text-blue-500'>JehanKandy</a> | Allrights reserved
                   </p>
