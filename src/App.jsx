@@ -3,6 +3,7 @@ import HomePage from "./pages/HoemPage/HomePage";
 import { useEffect, useState } from "react";
 import NavBar from "./components/NavBar/NavBar";
 import AboutUs from "./pages/AboutUs";
+import Footer from "./components/NavBar/Footer";
 
 
 export default function App() {
@@ -40,6 +41,14 @@ export default function App() {
         <Route path="/" element={<HomePage /> } />
         <Route path="/AboutUs" element={<AboutUs /> } />
       </Routes>
+
+      {
+        location.pathname === '/'
+        ?
+        <div className=""></div>
+        :
+        <Footer />
+      }
       
     </BrowserRouter>
   )
